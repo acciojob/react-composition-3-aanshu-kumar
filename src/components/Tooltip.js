@@ -1,20 +1,22 @@
+
+// Tooltip.js
 import React, { useState } from "react";
 import "../styles/App.css";
 
 const Tooltip = ({ text, children }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-  const showTooltip = () => setIsVisible(true);
-  const hideTooltip = () => setIsVisible(false);
+  const showTooltip = () => setVisible(true);
+  const hideTooltip = () => setVisible(false);
 
   return (
-    <div
-      className="tooltip"
-      onMouseEnter={showTooltip}
+    <div 
+      className="tooltip" 
+      onMouseEnter={showTooltip} 
       onMouseLeave={hideTooltip}
     >
       {children}
-      {isVisible && <div>{text}</div>}
+      {visible && <div className="tooltiptext">{text}</div>}
     </div>
   );
 };
