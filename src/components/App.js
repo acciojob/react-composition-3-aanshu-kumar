@@ -6,10 +6,10 @@ const App = () => {
   return (
     <div className="app" style={{marginTop: "50px"}}>
 
-        <Tooltip text="This is a tooltip">
+        <Tooltip text={<h2>This is a tooltip</h2>}>
           <h1 className="hover-item">Hover over me</h1>
         </Tooltip>
-        <Tooltip text="This is another tooltip">
+        <Tooltip text={<p>This is a tooltip</p>}>
           <p className="hover-item">Hover over me to see another tooltip</p>
         </Tooltip>
     </div>
