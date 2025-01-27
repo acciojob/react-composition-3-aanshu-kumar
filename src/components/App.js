@@ -4,7 +4,7 @@ import "../styles/App.css";
 
 const App = () => {
   return (
-    <div className="app" style={{marginTop: "50px"}}>
+    <div className="app" style={{marginTop: "100px"}}>
 
         <Tooltip text={<h2>This is a tooltip</h2>}>
           <h1 className="hover-item">Hover over me</h1>
