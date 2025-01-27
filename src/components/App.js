@@ -1,13 +1,19 @@
-
 import React from "react";
-import './../styles/App.css';
+import Tooltip from "./Tooltip";
+import "../styles/App.css";
 
 const App = () => {
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
-}
+    <div className="app" style={{marginTop: "50px"}}>
 
-export default App
+        <Tooltip text="This is a tooltip">
+          <h1 className="hover-item">Hover over me</h1>
+        </Tooltip>
+        <Tooltip text="This is another tooltip">
+          <p className="hover-item">Hover over me to see another tooltip</p>
+        </Tooltip>
+    </div>
+  );
+};
+
+export default App;
