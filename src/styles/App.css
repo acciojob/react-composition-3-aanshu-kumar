@@ -1,1 +1,35 @@
 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltiptext {
+    visibility: visible;
+    position: absolute;
+    bottom: 125%; /* Position above the children */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
+  
+  .hover-item {
+    color: #007bff;
+    text-decoration: underline;
+    margin: 0 10px;
+  }
+  
